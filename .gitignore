@@ -1,0 +1,86 @@
+# Internal project notes and design prototypes stay local.
+/.project/
+/docs/
+/design/
+# Frozen legacy Java backend remains local.
+/yuni-spring/
+
+# Browser automation scratch work, profiles, screenshots and reports.
+**/.playwright/
+**/playwright-report/
+**/test-results/
+**/browser-tests/
+**/browser-test-results/
+**/chrome-profile*/
+**/chromium-profile*/
+**/playwright/.cache/
+
+# Local model credentials (never publish).
+**/auth.json
+**/embedding-auth.json
+**/image-auth.json
+**/voice-auth.json
+**/vision-auth.json
+**/.auth-*.tmp
+/.playwright-cli/
+/output/
+/tmp/
+# Default file-tool workspace: the user's and companion's own files.
+/workspace/
+/.sandbox-recovery/
+/.tmp/
+
+# Credentials and local environment overrides
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local databases and runtime state
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+**/memory-index/
+/data/
+/yuni-client/agent/data/
+/yuni-spring/yuni-back/data/
+**/generated-voices/
+**/generated-images/
+
+# Dependencies, build products, and test caches
+**/node_modules/
+**/.venv/
+**/__pycache__/
+**/.pytest_cache/
+**/.ruff_cache/
+**/.playwright-cli/
+**/output/
+**/dist/
+**/target/
+**/.coverage
+**/htmlcov/
+*.pyc
+*.log
+*.log.*
+*.stdout
+*.stderr
+**/logs/
+**/log/
+**/coverage/
+**/.mypy_cache/
+**/.hypothesis/
+**/.cache/
+**/*.tsbuildinfo
+
+# Local editor state and one-off permission probes
+**/.idea/
+.DS_Store
+Thumbs.db
+/delete-permission-probe-*.txt
